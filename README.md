@@ -29,11 +29,11 @@ Installed applications list:
 
 > Page on `hub.docker.com` can be [found here][link_hub].
 
-New **minor** `alpine`-based images _(e.g. `tarampampam/node:13.1-alpine`, if it does not exists previously)_ builds automatically every hour, **major** _(e.g. `tarampampam/node:13-alpine`)_ and `latest` rebuilds every 3 days.
+New **minor** `alpine`-based images _(e.g. `sovanyio/node:13.1-alpine`, if it does not exists previously)_ builds automatically every hour, **major** _(e.g. `sovanyio/node:13-alpine`)_ and `latest` rebuilds every 3 days.
 
 ## Supported tags
 
-[![image stats](https://dockeri.co/image/tarampampam/node)][link_docker_tags]
+[![image stats](https://dockeri.co/image/sovanyio/node)][link_docker_tags]
 
 All supported image tags [can be found here][link_docker_tags].
 
@@ -46,7 +46,7 @@ $ docker run --rm \
     --volume "$(pwd):/app" \
     --workdir "/app" \
     --user "$(id -u):$(id -g)" \
-    tarampampam/node:13-alpine \
+    sovanyio/node:13-alpine \
     npm install
 ```
 
@@ -65,3 +65,16 @@ services:
 ### License
 
 WTFPL. Use anywhere for your pleasure.
+
+[badge_pulls]:https://img.shields.io/docker/pulls/sovanyio/node.svg?maxAge=30&style=flat-square
+[badge_issues]:https://img.shields.io/github/issues/sovanyio/node-docker.svg?maxAge=30&style=flat-square
+[badge_license]:https://img.shields.io/github/license/sovanyio/node-docker.svg?maxAge=30&style=flat-square&color=success
+[badge_build_minor]:https://img.shields.io/github/workflow/status/sovanyio/node-docker/Build%20minor%20alpine%20image.svg?label=minor%20build&logo=github&style=flat-square
+[badge_build_major]:https://img.shields.io/github/workflow/status/sovanyio/node-docker/Build%20major%20images.svg?label=major%20build&logo=github&style=flat-square
+[node-586]:https://github.com/nodejs/docker-node/issues/586
+[link_base_node_image]:https://hub.docker.com/_/node?tab=tags
+[link_hub]:https://hub.docker.com/r/sovanyio/node/
+[link_actions]:https://github.com/sovanyio/node-docker/actions
+[link_docker_tags]:https://hub.docker.com/r/sovanyio/node/tags
+[link_license]:https://github.com/sovanyio/node-docker/blob/master/LICENSE
+[link_issues]:https://github.com/sovanyio/node-docker/issues
