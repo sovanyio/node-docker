@@ -9,7 +9,7 @@ on:
 
 env:
   SOURCE_HUB: 'library/node'
-  TARGET_HUB: 'tarampampam/node'
+  TARGET_HUB: 'sovanyio/node'
 
 jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-actions>
   alpine:

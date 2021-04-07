@@ -14,7 +14,7 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
     timeout-minutes: 10
     env:
       SOURCE_HUB: 'library/node'
-      TARGET_HUB: 'tarampampam/node'
+      TARGET_HUB: 'sovanyio/node'
     steps:
       - name: Get minor node images (alpine-based) and compare with existing images
         id: info

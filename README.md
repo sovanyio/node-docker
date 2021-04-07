@@ -25,6 +25,7 @@ Installed applications list:
 - `git`
 - `bash`
 - `openssh`
+- `chromium`
 
 > Page on `hub.docker.com` can be [found here][link_hub].
 
@@ -54,7 +55,7 @@ Or using with `docker-compose.yml`:
 ```yml
 services:
   node:
-    image: tarampampam/node:13-alpine
+    image: sovanyio/node:13-alpine
     volumes:
     - ./src:/app:rw
     working_dir: /app
@@ -64,16 +65,3 @@ services:
 ### License
 
 WTFPL. Use anywhere for your pleasure.
-
-[badge_pulls]:https://img.shields.io/docker/pulls/tarampampam/node.svg?maxAge=30&style=flat-square
-[badge_issues]:https://img.shields.io/github/issues/tarampampam/node-docker.svg?maxAge=30&style=flat-square
-[badge_license]:https://img.shields.io/github/license/tarampampam/node-docker.svg?maxAge=30&style=flat-square&color=success
-[badge_build_minor]:https://img.shields.io/github/workflow/status/tarampampam/node-docker/Build%20minor%20alpine%20image.svg?label=minor%20build&logo=github&style=flat-square
-[badge_build_major]:https://img.shields.io/github/workflow/status/tarampampam/node-docker/Build%20major%20images.svg?label=major%20build&logo=github&style=flat-square
-[node-586]:https://github.com/nodejs/docker-node/issues/586
-[link_base_node_image]:https://hub.docker.com/_/node?tab=tags
-[link_hub]:https://hub.docker.com/r/tarampampam/node/
-[link_actions]:https://github.com/tarampampam/node-docker/actions
-[link_docker_tags]:https://hub.docker.com/r/tarampampam/node/tags
-[link_license]:https://github.com/tarampampam/node-docker/blob/master/LICENSE
-[link_issues]:https://github.com/tarampampam/node-docker/issues

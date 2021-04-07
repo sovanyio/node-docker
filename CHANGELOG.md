@@ -1,6 +1,8 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## 21.04.7
+- Add chromium into image for easier puppeteering
 
 ## 21.03.31
 
